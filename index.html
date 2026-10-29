@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17140f">
+    <meta name="description" content="Discover Ghanaian cuisine and contemporary fine dining at Arkoh Maison in Accra, Ghana.">
+    <title>Arkoh Maison | Ghanaian Cuisine & Fine Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand">
+                <span class="brand-mark">AM</span>
+                <span class="brand-name">
+                    ARKOH MAISON
+                    <small>GHANAIAN CUISINE & FINE DINING</small>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle"
+                type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#story">Our Story</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="#reservations" class="nav-cta">Reserve a Table</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-image" role="img"
+                aria-label="An elegant fine dining experience"></div>
+            <div class="hero-content container">
+                <p class="eyebrow">A TASTE OF GHANA</p>
+                <h1>Where Ghanaian Flavours<br>
+                    Meet <em>Timeless Elegance.</em></h1>
+                <p class="hero-description">
+                    Discover authentic Ghanaian favourites, thoughtfully
+                    prepared and beautifully presented for an unforgettable
+                    dining experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="#menu" class="button button-gold">Explore Our Menu</a>
+                    <a href="#reservations" class="button button-outline">
+                        Reserve a Table
+                    </a>
+                </div>
+                <div class="hero-note">
+                    <span class="gold-dot"></span>
+                    Contemporary dining · Accra, Ghana
+                </div>
+            </div>
+            <div class="hero-index">01 / 04</div>
+        </section>
+        <section class="welcome section-padding">
+            <div class="container welcome-grid">
+                <div>
+                    <p class="eyebrow">WELCOME TO ARKOH MAISON</p>
+                    <h2>A little taste of home.<br>
+                        <em>A world of flavour.</em></h2>
+                </div>
+                <p class="welcome-copy">
+                    From the familiar aroma of Ghanaian jollof to the rich
+                    flavours of freshly grilled tilapia, every dish celebrates
+                    our culinary heritage with a contemporary touch.
+                    Come for the food. Stay for the experience.
+                </p>
+            </div>
+        </section>
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">MADE WITH PASSION</p>
+                    <h2>Our <em>Signature Menu</em></h2>
+                    <p>Local favourites, prepared with care and served with style.</p>
+                </div>
+                <div class="menu-filters" role="group"
+                    aria-label="Filter menu by category">
+                    <button class="filter-button active" data-category="all"
+                        type="button" aria-pressed="true">All Dishes</button>
+                    <button class="filter-button" data-category="starters"
+                        type="button" aria-pressed="false">Starters</button>
+                    <button class="filter-button" data-category="mains"
+                        type="button" aria-pressed="false">Mains</button>
+                    <button class="filter-button" data-category="desserts"
+                        type="button" aria-pressed="false">Desserts</button>
+                    <button class="filter-button" data-category="beverages"
+                        type="button" aria-pressed="false">Beverages</button>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="starters">
+                        <div class="food-image food-kelewele" role="img"
+                            aria-label="Kelewele with groundnuts"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">STARTER</span>
+                            <h3>Kelewele & Groundnuts</h3>
+                            <p>Spiced fried plantain with roasted groundnuts.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 45.00</span>
+                                <span class="dish-tag">Local favourite</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="starters">
+                        <div class="food-image food-wings" role="img"
+                            aria-label="Grilled chicken wings"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">STARTER</span>
+                            <h3>Signature Chicken Wings</h3>
+                            <p>Grilled wings finished with a house spice blend.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 65.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="mains">
+                        <div class="food-image food-jollof" role="img"
+                            aria-label="Ghanaian jollof rice with grilled chicken"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">MAIN COURSE</span>
+                            <h3>Arkoh Signature Jollof</h3>
+                            <p>Ghanaian jollof served with grilled chicken and fresh salad.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 95.00</span>
+                                <span class="dish-tag">Chef's pick</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="mains">
+                        <div class="food-image food-tilapia" role="img"
+                            aria-label="Grilled tilapia with banku"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">MAIN COURSE</span>
+                            <h3>Grilled Tilapia & Banku</h3>
+                            <p>Seasoned grilled tilapia served with banku and pepper sauce.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 150.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="mains">
+                        <div class="food-image food-waakye" role="img"
+                            aria-label="Waakye with assorted accompaniments"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">MAIN COURSE</span>
+                            <h3>Classic Ghanaian Waakye</h3>
+                            <p>Rice and beans with traditional accompaniments.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 85.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="desserts">
+                        <div class="food-image food-cake" role="img"
+                            aria-label="Chocolate cake dessert"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">DESSERT</span>
+                            <h3>Chocolate Indulgence</h3>
+                            <p>Rich chocolate cake for a sweet finish.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 45.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="beverages">
+                        <div class="food-image food-juice" role="img"
+                            aria-label="Fresh pineapple juice"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">BEVERAGE</span>
+                            <h3>Fresh Pineapple Juice</h3>
+                            <p>Refreshing pineapple juice, served chilled.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 25.00</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="beverages">
+                        <div class="food-image food-sobolo" role="img"
+                            aria-label="Chilled hibiscus drink"></div>
+                        <div class="menu-card-content">
+                            <span class="dish-category">BEVERAGE</span>
+                            <h3>Ghanaian Sobolo</h3>
+                            <p>A refreshing hibiscus drink with aromatic spices.</p>
+                            <div class="dish-footer">
+                                <span class="price">GH₵ 20.00</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="menu-disclaimer">
+                    Sample menu and prices for this website demonstration.
+                </p>
+            </div>
+        </section>
+        <section class="story-section section-padding" id="story">
+            <div class="container story-grid">
+                <div class="story-image" role="img"
+                    aria-label="Warm and elegant restaurant dining atmosphere">
+                    <span class="image-caption">ROOTED IN GHANA. MADE FOR EVERYONE.</span>
+                </div>
+                <div class="story-content">
+                    <p class="eyebrow">OUR STORY</p>
+                    <h2>Heritage on every plate.<br>
+                        <em>Hospitality in every moment.</em></h2>
+                    <p>
+                        Arkoh Maison is a restaurant concept inspired by
+                        Ghana's rich food culture and the belief that good
+                        food brings people together.
+                    </p>
+                    <p>
+                        Our vision is to celebrate familiar local dishes
+                        through thoughtful preparation, beautiful presentation,
+                        and warm hospitality.
+                    </p>
+                    <p>
+                        Whether you're sharing a meal with family, meeting
+                        friends, or celebrating a special occasion, we believe
+                        every table deserves something memorable.
+                    </p>
+                    <a href="#reservations" class="text-link">
+                        Join us at the table <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="chef-section">
+            <div class="container chef-content">
+                <p class="eyebrow">THE MAISON EXPERIENCE</p>
+                <h2>Good food. Great company.<br>
+                    <em>Memories that stay.</em></h2>
+                <p>
+                    Discover the beauty of Ghanaian cuisine in a setting
+                    designed for connection, celebration, and enjoyment.
+                </p>
+                <a href="#menu" class="button button-gold">Discover Our Menu</a>
+            </div>
+        </section>
+        <section class="reviews-section section-padding" id="reviews">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">THE DINING EXPERIENCE</p>
+                    <h2>Made for <em>memorable moments.</em></h2>
+                    <p>A preview of the kind of hospitality we aspire to offer.</p>
+                </div>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Five stars">★★★★★</div>
+                        <blockquote>
+                            “Beautifully presented food and a wonderful
+                            atmosphere for sharing a meal.”
+                        </blockquote>
+                        <p class="review-author">Sample Guest</p>
+                        <span class="review-note">Illustrative testimonial</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Five stars">★★★★★</div>
+                        <blockquote>
+                            “A lovely concept celebrating Ghanaian flavours
+                            with a modern dining touch.”
+                        </blockquote>
+                        <p class="review-author">Sample Guest</p>
+                        <span class="review-note">Illustrative testimonial</span>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="Five stars">★★★★★</div>
+                        <blockquote>
+                            “The perfect idea for a relaxed dinner with
+                            friends and family.”
+                        </blockquote>
+                        <p class="review-author">Sample Guest</p>
+                        <span class="review-note">Illustrative testimonial</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="reservation-section section-padding" id="reservations">
+            <div class="container reservation-grid">
+                <div class="reservation-intro">
+                    <p class="eyebrow">YOUR TABLE AWAITS</p>
+                    <h2>Make it a moment<br>
+                        <em>worth remembering.</em></h2>
+                    <p>
+                        Planning a dinner, a family gathering, or a special
+                        celebration? Send us your preferred reservation details.
+                    </p>
+                    <div class="reservation-detail">
+                        <span class="detail-icon">01</span>
+                        <div>
+                            <strong>Choose your date</strong>
+                            <p>Select your preferred dining day.</p>
+                        </div>
+                    </div>
+                    <div class="reservation-detail">
+                        <span class="detail-icon">02</span>
+                        <div>
+                            <strong>Tell us your preferences</strong>
+                            <p>Let us know your party size and time.</p>
+                        </div>
+                    </div>
+                    <div class="reservation-detail">
+                        <span class="detail-icon">03</span>
+                        <div>
+                            <strong>Send your request</strong>
+                            <p>Your email app will open with your details.</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservation-form">
+                    <h3>Request a Reservation</h3>
+                    <p class="form-description">
+                        Complete the form to prepare your request.
+                    </p>
+                    <div class="form-group">
+                        <label for="guest-name">Full name</label>
+                        <input type="text" id="guest-name" name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name" required maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-email">Email address</label>
+                        <input type="email" id="guest-email" name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email" required maxlength="254">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-date">Preferred date</label>
+                            <input type="date" id="booking-date"
+                                name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Preferred time</label>
+                            <select id="booking-time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-count">Number of guests</label>
+                        <select id="guest-count" name="guests" required>
+                            <option value="1">1 guest</option>
+                            <option value="2" selected>2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="5">5 guests</option>
+                            <option value="6">6 guests</option>
+                            <option value="7">7 guests</option>
+                            <option value="8">8 guests</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-notes">Additional requests (optional)</label>
+                        <textarea id="booking-notes" name="notes"
+                            placeholder="Tell us about any special requests"
+                            rows="3" maxlength="500"></textarea>
+                    </div>
+                    <button type="submit" class="button button-gold submit-button">
+                        Prepare Reservation Request →
+                    </button>
+                    <p class="form-notice">
+                        Demonstration only. No reservation is confirmed
+                        automatically. Your email application will open
+                        for you to review and send the request.
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section class="contact-section section-padding" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>We'd love to <em>hear from you.</em></h2>
+                    <p>
+                        Questions, enquiries, or special dining requests?
+                        Reach out to our restaurant concept.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-label">EMAIL ENQUIRIES</span>
+                    <a href="mailto:kwesiwhizkid100@gmail.com">
+                        kwesiwhizkid100@gmail.com
+                    </a>
+                    <span class="contact-label">LOCATION</span>
+                    <p>Accra, Ghana</p>
+                    <span class="contact-label">OPENING HOURS</span>
+                    <p>Monday – Sunday: 12:00 PM – 10:00 PM</p>
+                    <p class="contact-note">
+                        Proposed details for this demonstration website.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="#home" class="brand footer-brand">
+                <span class="brand-mark">AM</span>
+                <span class="brand-name">
+                    ARKOH MAISON
+                    <small>GHANAIAN CUISINE & FINE DINING</small>
+                </span>
+            </a>
+            <p>A Taste of Ghana. An Experience Beyond.</p>
+            <p class="copyright">
+                © <span id="current-year">2026</span> Arkoh Maison.
+                Website concept for educational purposes.
+            </p>
+        </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
